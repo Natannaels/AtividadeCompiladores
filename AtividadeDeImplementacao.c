@@ -1,8 +1,10 @@
-//
+//Filiphe Natannael
+//João Gabriel
+//Rômulo de Souza
 
 #include <stdio.h>
 
-int main() {
+int main(){
     char entrada[100];
     char lexema[100];//armazena as entradas aceitas a cada caracter lido
     int estado = 0;
@@ -40,7 +42,7 @@ int main() {
                 if (c >= '0' && c <= '9') {
                     estado = 2;
                     lexema[j++] = c;
-                } else if (c == ',') {
+                } else if (c== ',') {
                     estado = 3;
                     lexema[j++] = c;
                 } else {
@@ -79,7 +81,7 @@ int main() {
         lexema[j] = '\0';
         printf("Token reconhecido: %s\n", lexema);
     } else {
-        printf("Nenhum token reconhecido\n");
+        printf("Nenhum token reconhecido!\n");
     }
 
     return 0;
