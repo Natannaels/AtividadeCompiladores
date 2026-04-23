@@ -73,7 +73,7 @@ int main(){
                 }
                 break;
         }
-
+        
         i++;//avança a fita de entrad
     }
 
@@ -83,6 +83,5 @@ int main(){
     } else {
         printf("Nenhum token reconhecido!\n");
     }
-
     return 0;
 }
